@@ -84,6 +84,7 @@ for dataset in combine:
     dataset['Sex'] = dataset['Sex'].map( {'female': 1, 'male': 0} ).astype(int)
 
 
+# 缺失数据的处理
 guess_ages = np.zeros((2,3))
 for dataset in combine:
     for i in range(0, 2):
